@@ -84,6 +84,7 @@ val foregroundListener = object: Foreground.Listener {
         Log.e("Foreground", "Go to foreground")
     }
 }
+
 Foreground.addListener(foregroundListener)
 ```
 
