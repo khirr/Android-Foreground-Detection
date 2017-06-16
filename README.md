@@ -2,7 +2,7 @@
 A very simple Android background/foreground detector
 
 Detect event when app go to background/foreground
-Api-level 15+
+Api-level 14+
 
 Usage:
 
