@@ -15,7 +15,7 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.github.khirr:Android-Foreground-Detector:1.0.0'
+    compile 'com.github.khirr:Android-Foreground-Detector:1.0.1'
 }
 ```
 
@@ -43,14 +43,14 @@ You can check status anytime
 
 Java
 ```
-Foreground.Companion.getInstance().isForeground();
-Foreground.Companion.getInstance().isBackground();
+Foreground.Companion.isForeground();
+Foreground.Companion.isBackground();
 ```
 
 Kotlin
 ```
-Foreground.instance.isBackground()
-Foreground.instance.isForeground()
+Foreground.isBackground()
+Foreground.isForeground()
 ```
 
 
@@ -70,7 +70,7 @@ final Foreground.Listener foregroundListener = new Foreground.Listener() {
     }
 };
 
-Foreground.Companion.getInstance().addListener(foregroundListener);
+Foreground.Companion.addListener(foregroundListener);
 ```
 
 Kotlin
@@ -84,5 +84,5 @@ val foregroundListener = object: Foreground.Listener {
         Log.e("Foreground", "Go to foreground")
     }
 }
-Foreground.instance.addListener(foregroundListener)
+Foreground.addListener(foregroundListener)
 ```
