@@ -86,3 +86,6 @@ val foregroundListener = object: Foreground.Listener {
 }
 Foreground.addListener(foregroundListener)
 ```
+
+## License
+MIT
