@@ -6,6 +6,19 @@ Api-level 15+
 
 Usage:
 
+Add the repository to your gradle app
+```
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    compile 'com.github.khirr:Android-Foreground-Detector:1.0.0'
+}
+```
+
 Initialize on your Application singleton:
 
 Java
