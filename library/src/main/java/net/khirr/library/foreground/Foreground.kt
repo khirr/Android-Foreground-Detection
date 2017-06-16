@@ -12,29 +12,45 @@ class Foreground : Application.ActivityLifecycleCallbacks {
     }
 
     companion object {
-        val instance = Foreground()
+        private val instance = Foreground()
 
         fun init(application: Application) {
             application.registerActivityLifecycleCallbacks(instance)
+        }
+
+        fun addListener(listener: Listener) {
+            instance.addListener(listener)
+        }
+
+        fun removeListener(listener: Listener) {
+            instance.removeListener(listener)
+        }
+
+        fun isForeground(): Boolean {
+            return instance.isForeground()
+        }
+
+        fun isBackground(): Boolean {
+            return instance.isBackground()
         }
     }
 
     val listeners: ArrayList<Listener> = ArrayList()
     var numStarted = 0
 
-    fun addListener(listener: Listener) {
+    private fun addListener(listener: Listener) {
         listeners.add(listener)
     }
 
-    fun removeListener(listener: Listener) {
+    private fun removeListener(listener: Listener) {
         listeners.remove(listener)
     }
 
-    fun isForeground(): Boolean {
+    private fun isForeground(): Boolean {
         return (numStarted > 0)
     }
 
-    fun isBackground(): Boolean {
+    private fun isBackground(): Boolean {
         return (numStarted == 0)
     }
 

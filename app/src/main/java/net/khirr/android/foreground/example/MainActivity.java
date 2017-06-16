@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Foreground.Companion.getInstance().isForeground();
-        //Foreground.Companion.getInstance().isBackground();
+        //Foreground.Companion.isForeground();
+        //Foreground.Companion.isBackground();
     }
 }

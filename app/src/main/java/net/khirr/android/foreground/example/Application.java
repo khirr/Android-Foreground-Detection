@@ -12,7 +12,7 @@ public class Application extends android.app.Application implements Foreground.L
         //  Initialize
         Foreground.Companion.init(this);
         //  Add listener
-        Foreground.Companion.getInstance().addListener(this);
+        Foreground.Companion.addListener(this);
     }
 
     @Override
