@@ -15,8 +15,6 @@ public void onCreate() {
     super.onCreate();
     //  Initialize
     Foreground.Companion.init(this);
-    //  Add listener
-    Foreground.Companion.getInstance().addListener(this);
 }
 ```
 
