@@ -1,5 +1,5 @@
-# Android-Foreground-Detector
-A very simple Android background/foreground detector
+# Android-Foreground-Detection
+A very simple Android background/foreground detection
 
 Detect event when app go to background/foreground
 Api-level 14+
