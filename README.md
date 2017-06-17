@@ -15,7 +15,7 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.github.khirr:Android-Foreground-Detector:1.0.1'
+    compile 'com.github.khirr:Android-Foreground-Detection:1.0.1'
 }
 ```
 
